@@ -4,7 +4,7 @@ sweetwork-redis-client - a home brewed redis wrapper
 # Usage
 
 ```js
-const SweetworkRedisClient = require('@sweetwork-pack/sweetwork-redis-client');
+const SweetworkRedisClient = require('sweetwork-redis-client');
 const redis = new SweetworkRedisClient(/* optional db_index */); // default db_index = 9
 
 

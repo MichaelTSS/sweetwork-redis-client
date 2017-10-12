@@ -6,7 +6,6 @@ const HOST = '127.0.0.1';
 const DB = 9;
 const NO_FIELDS = 'No fields to parse';
 
-const clientsHash = {};
 let redisClient;
 function initClient(db, port, host) {
     // console.log('creating new connector!');
@@ -15,12 +14,7 @@ function initClient(db, port, host) {
         host,
         db
     });
-    redisClient.on('connect', err => {
-        clientsHash[port] = true;
-        // console.log('successfully connected');
-    });
     redisClient.on('error', err => {
-        delete clientsHash[port];
         console.error(err);
         throw err;
     });
