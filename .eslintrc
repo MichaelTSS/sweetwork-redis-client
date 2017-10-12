@@ -1,0 +1,22 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": false,
+    "node": true,
+    "mocha": true
+  },
+  "ecmaVersion": 6,
+  "rules": {
+    "func-names": 0, // disable enforce function names
+    "indent": [1, 4], // indentation in plugr is 4 spaces
+    "comma-dangle": [2, "never"], // disable forcing trailing coma in objects
+    "max-len": [2, 200, 4], // max line length 200
+    "no-unused-vars": [2, {"vars": "all", "args": "none"}], // disable enforce only declaring function arguments that will be used
+    "no-multi-spaces": 0, // allow variables and blocs alignments
+    "strict": 0 // re-enable use of 'use strict' in modules
+  },
+  "globals": {
+    "__utils__": true,
+    "document": true
+  }
+}

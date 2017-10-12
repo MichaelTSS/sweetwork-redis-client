@@ -1,0 +1,28 @@
+{
+    "name": "@sweetwork-pack/sweetwork-redis-client",
+    "version": "1.0.0",
+    "description": "A simple home brewed wrapper for Redis",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MichaelTSS/sweetwork-redis-client.git"
+    },
+    "maintainers": ["Michel Tresseras <m.tresseras@gmail.com>"],
+    "author": "Michel Tresseras",
+    "license": "ISC",
+    "dependencies": {
+        "chai": "3.5.x",
+        "mocha": "3.0.x",
+        "redis": "2.6.x"
+    },
+    "devDependencies": {
+        "eslint": "2.10.x",
+        "eslint-config-airbnb": "9.0.x",
+        "eslint-plugin-import": "1.8.x",
+        "eslint-plugin-jsx-a11y": "1.2.x",
+        "eslint-plugin-react": "5.1.x"
+    }
+}
